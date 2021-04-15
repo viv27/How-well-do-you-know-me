@@ -6,6 +6,8 @@ var userName = readlineSync.question("Whats your name? ")
 
 console.log("Welcome "+userName+" to do you know Vivek? ")
 
+console.log("Folloeing are some questions to check how well you know Vivek")
+
 function play(question,answer){
   var userAnswer = readlineSync.question(chalk.blueBright(question))
   if(userAnswer == answer){
@@ -44,4 +46,8 @@ for(var i = 0; i < questions.length; i++){
   play(currentQuestion.question,currentQuestion.answer)
 }
 
+console.log("--------------------------------------------")
+
 console.log(chalk.green.underline("Total score: "+score+"!"))
+
+console.log("--------------------------------------------")
